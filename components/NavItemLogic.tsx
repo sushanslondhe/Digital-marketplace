@@ -2,7 +2,6 @@ import { PRODUCT_CATEGORIES } from "@/lib"
 import { Button } from "./ui/button";
 import { ChevronDown, ShoppingBagIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { it } from "node:test";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -56,9 +55,7 @@ export default function NavItemLogic({
                                                 <Link className=" underline text-[20px] text-center mt-6 block font-medium  text-sky-500" href={item.href}>
                                                     {item.name}
                                                 </Link>
-                                                <p className=" flex justify-center gap-x-1 mt-1">
-                                                    Shop now <ShoppingBagIcon className=" text-green-500 h-5" />
-                                                </p>
+                                                
                                          </div>
                                         ))}
                                         </div>
