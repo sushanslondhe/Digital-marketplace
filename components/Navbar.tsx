@@ -27,7 +27,7 @@ export default function Navbar() {
                             <div className=" ml-auto flex  items-center">
                                 <div className=" hidden lg:flex lg:items-center lg:justify-end lg:space-x-1">
                                     {user ? null :(
-                                        <Link href='/sign-in'
+                                        <Link href='/api/signin'
                                         className={buttonVariants({
                                             variant:'link'
                                         })}>
@@ -39,7 +39,7 @@ export default function Navbar() {
                                     
 
                                     {user ? null :(
-                                        <Link href='/sign-up'
+                                        <Link href='/api/signup'
                                         className={buttonVariants({
                                             variant:'link'
                                         })}>
