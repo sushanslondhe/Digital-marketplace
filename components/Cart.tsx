@@ -46,7 +46,8 @@ export default function Cart(){
                             <h1>
                                 Transaction Fee
 
-                            </h1>
+                            </h1>  
+                             
                             <h2 className=" text-sm text-muted-foreground">
                                 {FormatPrice(TransactionFee)}
 
