@@ -7,6 +7,7 @@ import { z } from "zod";
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { cn } from "@/lib/utils";
+import { trpc } from "@/trpc/client";
 
 
 export default function Signup(){
@@ -19,6 +20,7 @@ export default function Signup(){
     const clickSubmit = (data:TAuthCredentials) => {
         console.log(data);
     }
+    // here
 
    const { register, handleSubmit, watch, formState:{errors}} = useForm<TAuthCredentials>({
     resolver:zodResolver(Authvalidator)
